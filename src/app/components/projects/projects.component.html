@@ -1,0 +1,23 @@
+<div class="project">
+    <div class="project__container">
+        <div class="project__title">
+            <h1>My <span class="project__title_span">Creative</span> Contributions to the World</h1>
+            <p>I’ve worked on numerous projects over the years, and these are the ones I’m most proud of. 
+                While many are in private repositories, feel free to reach out if any catch your interest 
+                or if you have suggestions for improvements.
+            </p>
+        </div>
+        <div class="project__con">
+            <div class="project__box" *ngFor="let project of project">
+                <div class="project__img">
+                    <img [src]="project.img" alt="">
+                </div>
+                <div class="project__info">
+                    <h1 class="project__name">{{ project.name}}</h1>
+                    <p class="project__description">{{ project.description}}</p>
+                    <p class="project__link"><fa-icon [icon]="faLink"></fa-icon>{{ project.link}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

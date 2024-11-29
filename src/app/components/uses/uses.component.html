@@ -1,0 +1,46 @@
+<div class="uses">
+    <div class="uses__container">
+        <div class="uses__title">
+            <h1>Software I use, gadgets I love, and other things I recommend.</h1>
+            <p>I often get asked about the tools I use to build software, stay productive, 
+                or sometimes even the ones I buy to trick myself into thinking I’m being productive 
+                while I’m actually procrastinating. Here’s a comprehensive list of all my favorite things.
+            </p>
+        </div>
+        <div class="uses__category">
+            <div class="uses__list">
+                <div class="uses__h1">
+                    <h1>Workstation</h1>
+                </div>
+                <div class="uses__column">
+                    <div class="uses__con" *ngFor="let workstation of workstation">
+                        <h1>{{ workstation.name }}</h1>
+                        <p>{{ workstation.description }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uses__list">
+                <div class="uses__h1">
+                    <h1>Development</h1>
+                </div>
+                <div class="uses__column">
+                    <div class="uses__con" *ngFor="let development of development">
+                        <h1>{{ development.name }}</h1>
+                        <p>{{ development.description }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uses__list">
+                <div class="uses__h1">
+                    <h1>Design</h1>
+                </div>
+                <div class="uses__column">
+                    <div class="uses__con" *ngFor="let design of design">
+                        <h1>{{ design.name }}</h1>
+                        <p>{{ design.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

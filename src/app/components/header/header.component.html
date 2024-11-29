@@ -1,0 +1,44 @@
+<div class="header" id="header" #header>
+    <nav class="nav container">
+      <div class="nav__img__container" routerLink="">
+        <div class="nav__img">
+            <img src="assets/img/about__img.jpg" alt="">
+        </div>
+      </div>
+      <div class="nav__menu" id="nav-menu" #navMenu>
+        <ul class="nav__list" #navList>
+          <div class="nav__navigation">
+            <h1>Navigation</h1>
+            <div class="nav__close" id="nav-close" #navClose>
+              <fa-icon [icon]="faX"></fa-icon>
+            </div>
+          </div>
+          <li routerLink="/about" class="nav__item" (click)="closeMenu()">
+            <a class="nav__link" routerLinkActive="active">About</a>
+          </li>
+          <li routerLink="/projects" class="nav__item" (click)="closeMenu()">
+            <a class="nav__link" routerLinkActive="active">Projects</a>
+          </li>
+          <li routerLink="/uses" class="nav__item" (click)="closeMenu()">
+            <a class="nav__link" routerLinkActive="active">Uses</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__buttons">
+        <div class="nav__toggle" id="nav-toggle" #navToggle>
+          <div class="nav__dropdown">
+            <p>Menu</p>
+            <fa-icon [icon]="faCaretDown"></fa-icon>
+          </div>
+        </div>
+        <div class="theme__container" (click)="toggleTheme()">
+          <fa-icon
+            [icon]="isDarkMode ? faSun : faMoon"
+            class="theme__button"
+            >
+          </fa-icon>
+        </div>
+    </div>
+  </nav>
+</div>
+<router-outlet></router-outlet>
