@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Design
 
-This portfolio design is inspired by Manggigi, but it is entirely my own code written from scratch and built using Angular.
+This portfolio design is inspired by Manggigi https://giandenorte.com/, but it is entirely my own code written from scratch and built using Angular.
